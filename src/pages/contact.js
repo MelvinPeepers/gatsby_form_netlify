@@ -33,7 +33,7 @@ function encode(data) {
       <div>
         <h1>Contact</h1>
         <form
-          name="contacts"
+          name="contactss"
           method="post"
           action="/thanks/"
           data-netlify="true"
