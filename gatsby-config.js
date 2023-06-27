@@ -6,5 +6,5 @@ module.exports = {
     title: `gatsby_basic_form`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-netlify`],
 }
