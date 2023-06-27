@@ -34,7 +34,7 @@ function encode(data) {
         <h1>Contact</h1>
         <form
           method="post"
-          netlify-honeypot="bot-field"
+          data-netlify-honeypot="bot-field"
           data-netlify="true"
           name="testimonial"
           onSubmit={handleSubmit}
