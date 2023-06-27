@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { navigate } from 'gatsby-link'
 
 function encode(data) {
@@ -33,11 +33,10 @@ function encode(data) {
       <div>
         <h1>Contact</h1>
         <form
-          name="contactss"
           method="post"
-          action="/thanks/"
-          data-netlify="true"
           netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="testimonial"
           onSubmit={handleSubmit}
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
