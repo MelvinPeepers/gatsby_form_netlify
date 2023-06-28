@@ -79,56 +79,56 @@ import useForm from '../utils/useForm'
 
 
 export default function TestimonialForm() {
-    const { values, updateValue } = useForm({
-      name: '',
-      message: '',
-    })
-    const { contact, error, loading, errMessage, submitContact } = useContact({
-      values,
-    })
-    console.log(contact, error, loading, submitContact)
-    if (errMessage) {
-      return <p>{errMessage}</p>
-    }
+    // const { values, updateValue } = useForm({
+    //   name: '',
+    //   message: '',
+    // })
+    // const { contact, error, loading, errMessage, submitContact } = useContact({
+    //   values,
+    // })
+    // console.log(contact, error, loading, submitContact)
+    // if (errMessage) {
+    //   return <p>{errMessage}</p>
+    // }
+
     return (
-      <Form
+    <div>
+        <form
         method="post"
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="testimonialone"
-      >
+        >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="testimonial" />
         <legend>Share With Others How We Have Impacted Your Life</legend>
-        <FullField className="nameEmail">
+        <div className="nameEmail">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
             id="name"
-            value={values.name}
-            onChange={updateValue}
             placeholder="Name"
             className="required"
             required
           />
-        </FullField>
-        <FullField className="message">
+        </div>
+        <div className="message">
           <label htmlFor="message">Message</label>
           <textarea
             name="message"
             id="message"
-            value={values.message}
-            onChange={updateValue}
             rows="5"
             placeholder="How has Kinna's House of Love helped you?"
             className="required"
             required
           />
-        </FullField>
-        <Submit type="submit" value="Submit" className="submit">
+        </div>
+        <button type="submit" value="Submit" className="submit">
           Submit
-        </Submit>
-      </Form>
+        </button>
+      </form>
+    </div>
+
     )
   }
