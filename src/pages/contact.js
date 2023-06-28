@@ -100,7 +100,7 @@ export default function TestimonialForm() {
         name="testimonialone"
         >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="testimonial" />
+        <input type="hidden" name="form-name" value="testimonialone" />
         <legend>Share With Others How We Have Impacted Your Life</legend>
         <div className="nameEmail">
           <label htmlFor="name">Name</label>
